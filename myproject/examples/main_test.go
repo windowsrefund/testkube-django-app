@@ -8,7 +8,7 @@ import (
 )
 
 func TestHello(t *testing.T) {
-	url := "https://https://django-test.streethawk.com/"
+	url := "https://django-test.streethawk.com/"
 
 	res, err := http.Get(url)
 	if err != nil {
