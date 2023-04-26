@@ -8,7 +8,7 @@ import (
 )
 
 func TestHello(t *testing.T) {
-	url := "http://localhost:30196"
+	url := "http://40.88.222.79:80"
 
 	res, err := http.Get(url)
 	if err != nil {
