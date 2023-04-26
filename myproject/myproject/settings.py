@@ -25,7 +25,7 @@ SECRET_KEY = 'qd1ycmhh^0+un5msrl5!-)j4ori_e12wdikc$5f5jl0v8&!t1x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-test.streethawk.com']
 
 
 # Application definition
