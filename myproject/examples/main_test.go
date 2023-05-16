@@ -1,4 +1,4 @@
-package main_test
+package main_testgo
 
 import (
 	"io/ioutil"
@@ -8,7 +8,7 @@ import (
 )
 
 func TestHello(t *testing.T) {
-	url := "https://django-test.streethawk.com/"
+	url := "http://localhost:9090"
 
 	res, err := http.Get(url)
 	if err != nil {
