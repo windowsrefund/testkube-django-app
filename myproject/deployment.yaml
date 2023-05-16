@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: myproject
-          image: richamishra006/django-app:v3
+          image: richamishra006/django-app:v4
           ports:
             - containerPort: 8000
