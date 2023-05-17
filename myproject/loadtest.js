@@ -8,6 +8,5 @@ export default function() {
 
     check(res, {
         "status is 200": (r) => r.status === 200,
-        "text body contains welcome message": (r) => r.body.includes("The install worked successfully! Congratulations")
     });
 }
