@@ -1,0 +1,23 @@
+
+apiVersion: tests.testkube.io/v1
+kind: TestTrigger
+metadata:
+ name: testtrigger-example
+ namespace: testkube
+spec:
+ resource: configmap
+ resourceSelector:
+   labelSelector:
+     matchLabels:
+       app: test
+ event: modified
+#  conditionSpec:
+#    timeout: 60
+#    conditions:
+#    - type: Ready
+#      status: "True"
+ action: run
+ execution: test
+ testSelector:
+   name: django-app-test
+   namespace: testkube
